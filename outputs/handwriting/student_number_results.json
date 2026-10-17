@@ -48,7 +48,7 @@
       "bbox": [
         611,
         460,
-        671,
+        670,
         541
       ],
       "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_03_1.png",
@@ -57,13 +57,13 @@
       "confidence": 0.9974640607833862,
       "correct": true,
       "naive_predicted_digit": 3,
-      "naive_confidence": 0.9993684887886047,
+      "naive_confidence": 0.9993956089019775,
       "naive_correct": false
     },
     {
       "index": 4,
       "bbox": [
-        669,
+        670,
         464,
         733,
         539
@@ -74,7 +74,7 @@
       "confidence": 0.9999246597290039,
       "correct": true,
       "naive_predicted_digit": 3,
-      "naive_confidence": 0.9956392049789429,
+      "naive_confidence": 0.9964672327041626,
       "naive_correct": false
     },
     {
@@ -82,22 +82,22 @@
       "bbox": [
         740,
         468,
-        809,
+        805,
         540
       ],
       "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_05_0.png",
       "true_digit": 0,
       "predicted_digit": 0,
-      "confidence": 0.8644263744354248,
+      "confidence": 0.9998940229415894,
       "correct": true,
       "naive_predicted_digit": 3,
-      "naive_confidence": 0.9883683323860168,
+      "naive_confidence": 0.9848050475120544,
       "naive_correct": false
     },
     {
       "index": 6,
       "bbox": [
-        801,
+        805,
         464,
         869,
         540
@@ -105,10 +105,10 @@
       "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_06_2.png",
       "true_digit": 2,
       "predicted_digit": 2,
-      "confidence": 0.9999874830245972,
+      "confidence": 0.9999884366989136,
       "correct": true,
       "naive_predicted_digit": 3,
-      "naive_confidence": 0.9859141111373901,
+      "naive_confidence": 0.9871817827224731,
       "naive_correct": false
     },
     {
@@ -116,22 +116,22 @@
       "bbox": [
         881,
         462,
-        951,
+        944,
         533
       ],
       "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_07_0.png",
       "true_digit": 0,
       "predicted_digit": 0,
-      "confidence": 0.5397369861602783,
+      "confidence": 0.9165830016136169,
       "correct": true,
       "naive_predicted_digit": 3,
-      "naive_confidence": 0.8862815499305725,
+      "naive_confidence": 0.9689218997955322,
       "naive_correct": false
     },
     {
       "index": 8,
       "bbox": [
-        938,
+        944,
         456,
         1014,
         538
@@ -139,10 +139,10 @@
       "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_08_5.png",
       "true_digit": 5,
       "predicted_digit": 5,
-      "confidence": 0.9999783039093018,
+      "confidence": 0.9999916553497314,
       "correct": true,
       "naive_predicted_digit": 3,
-      "naive_confidence": 0.9996232986450195,
+      "naive_confidence": 0.9995077848434448,
       "naive_correct": false
     },
     {
@@ -167,7 +167,7 @@
       "bbox": [
         1108,
         456,
-        1180,
+        1179,
         524
       ],
       "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_10_4.png",
@@ -176,13 +176,13 @@
       "confidence": 0.9951863884925842,
       "correct": true,
       "naive_predicted_digit": 0,
-      "naive_confidence": 0.3805646598339081,
+      "naive_confidence": 0.3356476128101349,
       "naive_correct": false
     },
     {
       "index": 11,
       "bbox": [
-        1178,
+        1179,
         445,
         1243,
         535
@@ -193,7 +193,7 @@
       "confidence": 0.999840259552002,
       "correct": true,
       "naive_predicted_digit": 7,
-      "naive_confidence": 0.8473339676856995,
+      "naive_confidence": 0.8731537461280823,
       "naive_correct": false
     }
   ]

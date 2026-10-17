@@ -81,25 +81,32 @@ def train_model(model: nn.Module, train_loader, val_loader, epochs: int, lr: flo
 
 def save_plots(history: dict[str, list[float]], output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
+    epochs = list(range(1, len(history["train_loss"]) + 1))
 
     plt.figure(figsize=(7, 5))
-    plt.plot(history["train_loss"], label="Train Loss")
-    plt.plot(history["val_loss"], label="Validation Loss")
+    plt.plot(epochs, history["train_loss"], marker="o", label="Train Loss")
+    plt.plot(epochs, history["val_loss"], marker="s", label="Validation Loss")
+    plt.title("Eğitim ve Doğrulama Kayıp (Loss) Grafiği")
     plt.xlabel("Epoch")
-    plt.ylabel("Loss")
+    plt.ylabel("Cross-Entropy Loss")
+    plt.xticks(epochs)
+    plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
-    plt.savefig(output_dir / "loss_curve.png")
+    plt.savefig(output_dir / "loss_curve.png", dpi=150)
     plt.close()
 
     plt.figure(figsize=(7, 5))
-    plt.plot(history["train_accuracy"], label="Train Accuracy")
-    plt.plot(history["val_accuracy"], label="Validation Accuracy")
+    plt.plot(epochs, history["train_accuracy"], marker="o", label="Train Accuracy")
+    plt.plot(epochs, history["val_accuracy"], marker="s", label="Validation Accuracy")
+    plt.title("Eğitim ve Doğrulama Doğruluk (Accuracy) Grafiği")
     plt.xlabel("Epoch")
     plt.ylabel("Accuracy")
+    plt.xticks(epochs)
+    plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
-    plt.savefig(output_dir / "accuracy_curve.png")
+    plt.savefig(output_dir / "accuracy_curve.png", dpi=150)
     plt.close()
 
 
@@ -141,6 +148,10 @@ def run_training(args: argparse.Namespace) -> dict:
         "hidden_sizes": args.hidden_sizes,
         "val_split": args.val_split,
         "training_time_seconds": training_time_seconds,
+        "train_loss": history["train_loss"][-1],
+        "val_loss": history["val_loss"][-1],
+        "train_accuracy": history["train_accuracy"][-1],
+        "val_accuracy": history["val_accuracy"][-1],
         "test_loss": test_loss,
         "test_accuracy": test_accuracy,
         "history": history,
@@ -166,7 +177,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Train MNIST MLP from scratch.")
     parser.add_argument("--data-dir", default="./data")
     parser.add_argument("--output-dir", default="./outputs/run")
-    parser.add_argument("--epochs", type=int, default=5)
+    parser.add_argument("--epochs", type=int, default=10)
     parser.add_argument("--batch-size", type=int, default=128)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--optimizer", choices=["adam", "sgd"], default="adam")
@@ -180,8 +191,18 @@ def build_arg_parser() -> argparse.ArgumentParser:
 def main() -> None:
     args = build_arg_parser().parse_args()
     summary = run_training(args)
-    print(json.dumps({k: summary[k] for k in ["training_time_seconds", "test_loss", "test_accuracy"]}, indent=2))
+    keys = [
+        "training_time_seconds",
+        "train_loss",
+        "val_loss",
+        "train_accuracy",
+        "val_accuracy",
+        "test_loss",
+        "test_accuracy",
+    ]
+    print(json.dumps({k: summary[k] for k in keys}, indent=2))
 
 
 if __name__ == "__main__":
     main()
+

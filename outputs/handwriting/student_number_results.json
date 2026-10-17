@@ -1,0 +1,200 @@
+{
+  "student_number_image": "./data/handwritten_digits/number.png",
+  "expected_number": "24120205049",
+  "predicted_number": "24120205049",
+  "total_digits": 11,
+  "correct_digits": 11,
+  "accuracy": 1.0,
+  "naive_predicted_number": "31333333307",
+  "naive_correct_digits": 0,
+  "naive_accuracy": 0.0,
+  "digits": [
+    {
+      "index": 1,
+      "bbox": [
+        447,
+        469,
+        517,
+        547
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_01_2.png",
+      "true_digit": 2,
+      "predicted_digit": 2,
+      "confidence": 0.9991201758384705,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.9998370409011841,
+      "naive_correct": false
+    },
+    {
+      "index": 2,
+      "bbox": [
+        530,
+        466,
+        592,
+        542
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_02_4.png",
+      "true_digit": 4,
+      "predicted_digit": 4,
+      "confidence": 0.999038577079773,
+      "correct": true,
+      "naive_predicted_digit": 1,
+      "naive_confidence": 0.6379550099372864,
+      "naive_correct": false
+    },
+    {
+      "index": 3,
+      "bbox": [
+        611,
+        460,
+        671,
+        541
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_03_1.png",
+      "true_digit": 1,
+      "predicted_digit": 1,
+      "confidence": 0.9974640607833862,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.9993684887886047,
+      "naive_correct": false
+    },
+    {
+      "index": 4,
+      "bbox": [
+        669,
+        464,
+        733,
+        539
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_04_2.png",
+      "true_digit": 2,
+      "predicted_digit": 2,
+      "confidence": 0.9999246597290039,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.9956392049789429,
+      "naive_correct": false
+    },
+    {
+      "index": 5,
+      "bbox": [
+        740,
+        468,
+        809,
+        540
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_05_0.png",
+      "true_digit": 0,
+      "predicted_digit": 0,
+      "confidence": 0.8644263744354248,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.9883683323860168,
+      "naive_correct": false
+    },
+    {
+      "index": 6,
+      "bbox": [
+        801,
+        464,
+        869,
+        540
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_06_2.png",
+      "true_digit": 2,
+      "predicted_digit": 2,
+      "confidence": 0.9999874830245972,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.9859141111373901,
+      "naive_correct": false
+    },
+    {
+      "index": 7,
+      "bbox": [
+        881,
+        462,
+        951,
+        533
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_07_0.png",
+      "true_digit": 0,
+      "predicted_digit": 0,
+      "confidence": 0.5397369861602783,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.8862815499305725,
+      "naive_correct": false
+    },
+    {
+      "index": 8,
+      "bbox": [
+        938,
+        456,
+        1014,
+        538
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_08_5.png",
+      "true_digit": 5,
+      "predicted_digit": 5,
+      "confidence": 0.9999783039093018,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.9996232986450195,
+      "naive_correct": false
+    },
+    {
+      "index": 9,
+      "bbox": [
+        1028,
+        458,
+        1108,
+        533
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_09_0.png",
+      "true_digit": 0,
+      "predicted_digit": 0,
+      "confidence": 0.9982411861419678,
+      "correct": true,
+      "naive_predicted_digit": 3,
+      "naive_confidence": 0.9789513945579529,
+      "naive_correct": false
+    },
+    {
+      "index": 10,
+      "bbox": [
+        1108,
+        456,
+        1180,
+        524
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_10_4.png",
+      "true_digit": 4,
+      "predicted_digit": 4,
+      "confidence": 0.9951863884925842,
+      "correct": true,
+      "naive_predicted_digit": 0,
+      "naive_confidence": 0.3805646598339081,
+      "naive_correct": false
+    },
+    {
+      "index": 11,
+      "bbox": [
+        1178,
+        445,
+        1243,
+        535
+      ],
+      "saved_28x28_path": "data/handwritten_digits/digits_28x28/digit_11_9.png",
+      "true_digit": 9,
+      "predicted_digit": 9,
+      "confidence": 0.999840259552002,
+      "correct": true,
+      "naive_predicted_digit": 7,
+      "naive_confidence": 0.8473339676856995,
+      "naive_correct": false
+    }
+  ]
+}

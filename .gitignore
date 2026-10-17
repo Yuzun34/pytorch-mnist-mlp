@@ -1,11 +1,10 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-
-outputs/
+.venv/
 
 # MNIST download/cache
 /data/MNIST/
 
-# Generated checkpoints
+# Generated model weight checkpoints (keep plots & JSON summaries in outputs/ tracked)
 *.pt
